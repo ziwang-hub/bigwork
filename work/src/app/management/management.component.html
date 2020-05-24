@@ -1,0 +1,34 @@
+<div class="navbar navbar-dark  bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" >浙江机电职业技术学院</a>
+   
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" [routerLink]="['exit']">退出</a>
+      </li>
+    </ul>
+</div>
+  <div class="row">
+  <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+     
+        
+          <a class="nav-link active" [routerLink]="['score-management']">
+            学生成绩管理 
+          </a>
+       
+        
+            <a class="nav-link" [routerLink]="['product-management']">
+           产品管理
+          </a>
+        
+    
+    </div>
+  </nav>
+  <div class="col-md-9">
+    <router-outlet></router-outlet>
+    </div>
+    </div>
+
+
+    
+    
